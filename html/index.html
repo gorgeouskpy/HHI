@@ -1,0 +1,28 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHI.inc</title>
+    <link rel="stylesheet" href="./dep/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/topbar.css">
+    <script src="./dep/vue.js"></script>
+    <script src="./dep/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 topbar">
+                    <span class="document" onclick="window.open('/document.html')">文档</span>
+                    <span class="event" onclick="window.open('/event')">大事记</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: "#app",
+    })
+</script>
+</html>

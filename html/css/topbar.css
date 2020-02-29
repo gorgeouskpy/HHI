@@ -1,0 +1,25 @@
+.topbar{
+    background-color: brown;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    position: fixed;
+}
+.topbar > span{
+    color: burlywood;
+    position: fixed;
+    font-weight: 500;
+    transition: all .3s;
+}
+.document{
+    right: 50px;
+}
+
+.event{
+    right: 150px;
+}
+
+.document:hover, .event:hover{
+    text-shadow: 0 0 17px #f1d7b6;
+}
