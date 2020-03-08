@@ -9,6 +9,7 @@ body{
     padding: 30px;
     position: fixed;
     z-index: 100;
+    transition: background-color .3s;
 }
 .topbar > span{
     color: rgb(223, 192, 153);
@@ -38,7 +39,7 @@ img{
     margin: auto 0;
     padding: 0;
 }
-.fet{
+.feat{
     width: 100%;
     text-align: center;
     color: rgb(70, 14, 14);
