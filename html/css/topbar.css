@@ -46,3 +46,17 @@ img{
     padding-top: 20px;
     padding-bottom: 80px;
 }
+.logo{
+    position: absolute;
+   left: 50px;
+   top: 13px;
+}
+.logo >svg{
+    height: 50px;
+    width: 50px;
+    fill: rgb(223, 192, 153);
+    transition: all 1s;
+}
+.logo>svg:hover{
+    filter: blur(5px);
+}
