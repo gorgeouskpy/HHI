@@ -15,6 +15,7 @@
   <script src="./dep/vue.js"></script>
   <script src="./script/topbar.js"></script>
   <script src="./script/bottom.js"></script>
+  <script src="./prop/content.js"></script>
   <style>
     
   </style>
@@ -66,9 +67,7 @@
                     </transition>
                 </div>
             </div>
-            <div class="col-9 contentarea">
-                <h3>Title</h3>
-            </div>
+            <component v-bind:is="currentcontent"></component>
         </div>
     </div>
 </body>
@@ -79,6 +78,7 @@
             titletoggle1: true,
             titletoggle2: true,
             titletoggle3: true,
+            currentcontent: "mydefault",
         },
         methods:{
             toggle1: function(){
