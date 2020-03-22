@@ -1,2 +1,0 @@
-# HHI
-Head Heat Inc.
