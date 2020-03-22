@@ -1,0 +1,19 @@
+.bottomarea{
+  background-color: brown;
+  height: 300px;
+}
+.bottomlist{
+  color: rgb(235, 212, 177);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+.bottomlist > li{
+  margin-top: 10px;
+}
+.bottomlist-title{
+  color: rgb(235, 212, 177);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

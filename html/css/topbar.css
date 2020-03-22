@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(243, 223, 223);
+}
+.topbar{
+    background-color: rgba(165, 42, 42, 0);
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    position: fixed;
+    z-index: 100;
+    transition: background-color .3s;
+}
+.topbar > span{
+    color: rgb(223, 192, 153);
+    position: fixed;
+    font-weight: 500;
+    transition: all .3s;
+}
+.document{
+    right: 50px;
+}
+
+.event{
+    right: 150px;
+}
+
+.document:hover, .event:hover{
+    text-shadow: 0 0 17px #eee4d6;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.icon{
+    width: 100%;
+    height: 300px;
+    margin: auto 0;
+    padding: 0;
+}
+.feat{
+    width: 100%;
+    text-align: center;
+    color: rgb(70, 14, 14);
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.logo{
+    position: absolute;
+   left: 50px;
+   top: 17px;
+}
+.logo >svg{
+    height: 40px;
+    width: 40px;
+    fill: rgb(223, 192, 153);
+    transition: all 1s;
+}
+.logo>svg:hover{
+    filter: blur(5px);
+}
