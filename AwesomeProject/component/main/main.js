@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View, Image, StyleSheet, } from 'react-native';
+import { Text, View, Image, StyleSheet,} from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
 /* 导入外部组件类 */
 import TabNavigator from 'react-native-tab-navigator';

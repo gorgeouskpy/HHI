@@ -1,40 +1,27 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import * as React from 'react';
+import { Button, View, Text } from 'react-native';
+import { navigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/native';
 
-class Blink extends Component {
-  // 声明state对象
-  state = { isShowingText: true };
-  
-  componentDidMount() {
-    // 每1000毫秒对showText状态做一次取反操作
-    setInterval(() => {
-      this.setState({
-        isShowingText: !this.state.isShowingText
-      });
-    }, 1000);
-  }
-
-  render() {
-    // 根据当前showText的值决定是否显示text内容
-    if (!this.state.isShowingText) {
-      return null;
-    }
-
+export default function DetailsScreen({ route, navigation }) {
+    /* 2. Get the param */
+    const { itemId } = route.params;
+    const { otherParam } = route.params;
     return (
-      <Text>{this.props.text}</Text>
-    );
-  }
-}
-
-export default class BlinkApp extends Component {
-  render() {
-    return (
-      <View>
-        <Blink text='I love to blink' />
-        <Blink text='Yes blinking is so great' />
-        <Blink text='Why did they ever take this out of HTML' />
-        <Blink text='Look at me look at me look at me' />
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Details Screen</Text>
+        <Text>itemId: {JSON.stringify(itemId)}</Text>
+        <Text>otherParam: {JSON.stringify(otherParam)}</Text>
+        <Button
+          title="Go to Details... again"
+          onPress={() =>
+            navigation.push('Details', {
+              itemId: Math.floor(Math.random() * 100),
+            })
+          }
+        />
+        <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+        <Button title="Go back" onPress={() => navigation.goBack()} />
       </View>
     );
   }
-}
