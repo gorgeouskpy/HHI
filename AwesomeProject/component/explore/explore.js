@@ -1,40 +1,59 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { 
+    Text, 
+    View, 
+    TextInput,
+    StyleSheet, 
+    ScrollView, 
+    Alert,
+    setState
+} from 'react-native';
 
-class Blink extends Component {
-  // 声明state对象
-  state = { isShowingText: true };
-  
-  componentDidMount() {
-    // 每1000毫秒对showText状态做一次取反操作
-    setInterval(() => {
-      this.setState({
-        isShowingText: !this.state.isShowingText
-      });
-    }, 1000);
-  }
+export default class Explore extends Component {
 
-  render() {
-    // 根据当前showText的值决定是否显示text内容
-    if (!this.state.isShowingText) {
-      return null;
+    constructor(props){
+        super(props);
+        this.state = {
+            searchingWord:'xxx',
+        };
+        this.searchWord = this.searchWord.bind(this);
     }
 
-    return (
-      <Text>{this.props.text}</Text>
-    );
-  }
-}
 
-export default class BlinkApp extends Component {
-  render() {
-    return (
-      <View>
-        <Blink text='I love to blink' />
-        <Blink text='Yes blinking is so great' />
-        <Blink text='Why did they ever take this out of HTML' />
-        <Blink text='Look at me look at me look at me' />
-      </View>
-    );
-  }
-}
+    searchWord(word){
+        this.setState=({
+            searchingWord:"me",
+        });
+        Alert.alert(this.state.searchingWord+'***'+word);
+    }
+
+    render() {
+        return (
+            <View style={{flex:1}}>
+                <TextInput
+                    placeholder="输入您想检索的单词"
+                    style={styles.searchWord}
+                    onChangeText={text=>this.searchWord(text)}
+                ></TextInput>
+                <ScrollView
+                    style={styles.scrollStyle}
+                    >
+                        <Text
+                            style={{height: 88}}
+                        >{this.state.searchingWord}</Text>
+                    </ScrollView>
+            </View>
+        );
+    }
+    }
+
+const styles = StyleSheet.create({
+    searchWord:{
+        backgroundColor:'#a52a2a',
+        textAlign:'center',
+        color:'#f0e0df',
+    },
+    scrollStyle:{
+        backgroundColor:'#f0e0df',
+    }
+})
