@@ -6,6 +6,7 @@ import {
     StyleSheet, 
     ScrollView, 
     Alert,
+    ActivityIndicator,
 } from 'react-native';
 
 export default class Explore extends Component {
@@ -14,6 +15,7 @@ export default class Explore extends Component {
         super(props);
         this.state = {
             searchingWord:'xxx',
+            isLoading:false,
         };
         this.searchWord = this.searchWord.bind(this);
         this.fetchMeaning = this.fetchMeaning.bind(this);
@@ -22,14 +24,14 @@ export default class Explore extends Component {
 
     async fetchMeaning(ofWhat){
         try {
-            const response = await fetch('http://182.92.180.14/test.json');
-            const responseJson = await (response.json());
+            const response = await fetch('http://182.92.180.14/lookup.php?word='+ofWhat,{
+                method:'GET',
+            });
+            const responseText = await (response.text());
             this.setState({
-                searchingWord:responseJson.movies[ofWhat].title,
+                searchingWord:responseText,
+                isLoading:false,
             })
-            console.log(responseJson.movies[0].title);
-            var res = responseJson.movies[0].title;
-            return res;
         }
         catch (e) {
             console.error(e);
@@ -37,10 +39,30 @@ export default class Explore extends Component {
     }
 
     searchWord(word){
+            this.setState({
+                isLoading:true,
+            })
         this.fetchMeaning(word);
     }
 
     render() {
+        if(this.state.isLoading){
+            return(
+                <View style={{flex:1,justifyContent:'center'}}>
+                <TextInput
+                    placeholder="输入您想检索的单词"
+                    style={styles.searchWord}
+                    onChangeText={text=>this.searchWord(text)}
+                ></TextInput>
+                <View
+                    style={styles.scrollStyleX}
+                    >
+                        <ActivityIndicator color="#a52a2a" size="large"></ActivityIndicator>
+                    </View>
+            </View>
+
+            )
+        }
         return (
             <View style={{flex:1}}>
                 <TextInput
@@ -68,5 +90,10 @@ const styles = StyleSheet.create({
     },
     scrollStyle:{
         backgroundColor:'#f0e0df',
-    }
+    },
+    scrollStyleX:{
+        flex:1,
+        backgroundColor:'#f0e0df',
+        justifyContent:'center',
+    },
 })
