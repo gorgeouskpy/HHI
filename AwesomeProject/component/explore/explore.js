@@ -6,7 +6,6 @@ import {
     StyleSheet, 
     ScrollView, 
     Alert,
-    setState
 } from 'react-native';
 
 export default class Explore extends Component {
@@ -17,14 +16,28 @@ export default class Explore extends Component {
             searchingWord:'xxx',
         };
         this.searchWord = this.searchWord.bind(this);
+        this.fetchMeaning = this.fetchMeaning.bind(this);
     }
 
 
+    async fetchMeaning(ofWhat){
+        try {
+            const response = await fetch('http://182.92.180.14/test.json');
+            const responseJson = await (response.json());
+            this.setState({
+                searchingWord:responseJson.movies[ofWhat].title,
+            })
+            console.log(responseJson.movies[0].title);
+            var res = responseJson.movies[0].title;
+            return res;
+        }
+        catch (e) {
+            console.error(e);
+        }
+    }
+
     searchWord(word){
-        this.setState=({
-            searchingWord:"me",
-        });
-        Alert.alert(this.state.searchingWord+'***'+word);
+        this.fetchMeaning(word);
     }
 
     render() {
