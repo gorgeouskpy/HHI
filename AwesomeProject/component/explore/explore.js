@@ -27,9 +27,9 @@ export default class Explore extends Component {
             const response = await fetch('http://182.92.180.14/lookup.php?word='+ofWhat,{
                 method:'GET',
             });
-            const responseText = await (response.text());
+            const responseJson = await (response.json());
             this.setState({
-                searchingWord:responseText,
+                searchingWord:responseJson.meaning,
                 isLoading:false,
             })
         }
@@ -74,7 +74,7 @@ export default class Explore extends Component {
                     style={styles.scrollStyle}
                     >
                         <Text
-                            style={{height: 88}}
+                            style={{height: 88,color:'#452520',fontSize:18,letterSpacing:.6,}}
                         >{this.state.searchingWord}</Text>
                     </ScrollView>
             </View>
@@ -90,6 +90,8 @@ const styles = StyleSheet.create({
     },
     scrollStyle:{
         backgroundColor:'#f0e0df',
+        padding:20,
+        color:'#552a29',
     },
     scrollStyleX:{
         flex:1,
