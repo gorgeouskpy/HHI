@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 /************引入自定义组件***************/
 import Home from './component/home/home';
+import HomeStackScreen from './component/home/homeStack'
 import Profile from './component/profile/profile';
 import Explore from './component/explore/explore';
 
@@ -32,7 +33,7 @@ function App(){
                     ></Tab.Screen>
                 <Tab.Screen
                     name='Home'
-                    component={Home}
+                    component={HomeStackScreen}
                     options={{
                         tabBarIcon:()=>(<IconHome></IconHome>)
                     }}
