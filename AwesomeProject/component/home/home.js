@@ -13,7 +13,7 @@ function Home({navigation}){
                 <View style={styles.buttonStyle}>
                     <Button 
                         title="Start To Test" 
-                        onPress={()=>navigation.navigate('Main')}
+                        onPress={()=>navigation.navigate('请选择正确的释义')}
                         color="#a52a2a"
                         size="big"
                         ></Button>

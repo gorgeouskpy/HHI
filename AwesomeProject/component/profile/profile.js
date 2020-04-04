@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-export default Profile;
+import {
+    View,
+    Text,
+} from 'react-native';
 
 function Profile(){
     return(
-        <View style={{alignItems:'center'}}>
+        <View>
             <Text>Profile</Text>
         </View>
     )
 }
+
+export default Profile;

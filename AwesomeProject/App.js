@@ -7,7 +7,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 /************引入自定义组件***************/
 import Home from './component/home/home';
 import HomeStackScreen from './component/home/homeStack'
-import Profile from './component/profile/profile';
+import Menu from './component/profile/menu';
+import MenuStackX from './component/profile/menuStack';
 import Explore from './component/explore/explore';
 
 import IconHome from './component/tabBar/homeIcon';
@@ -39,8 +40,8 @@ function App(){
                     }}
                     ></Tab.Screen>
                 <Tab.Screen
-                    name='Profile'
-                    component={Profile}
+                    name='Menu'
+                    component={MenuStackX}
                     ></Tab.Screen>
             </Tab.Navigator>
         </NavigationContainer>

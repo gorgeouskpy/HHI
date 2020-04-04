@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const someword = "word";
+const currentScore = 1;
 
 const someword1 = "word";
 const someword2 = "word";
@@ -15,10 +16,11 @@ class Home extends Component{
         return(
             <View style={styles.basicView}>
                 <Text style={styles.coreText}>{someword}</Text>
-                    <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
-                    <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
-                    <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
-                    <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
+                <Text style={styles.secTect}>{currentScore}</Text>
+                <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
+                <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
+                <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
+                <View style={styles.buttonView}><Button title={someword1} color="#a52a2a" onPress={()=>{}}></Button></View>
             </View>
         )
     }
@@ -40,6 +42,10 @@ const styles = StyleSheet.create({
         paddingBottom:20,
         width:250,
         color:'#552a29',
+    },
+    secTect:{
+        paddingBottom:20,
+        color:"#552a29",
     }
 })
 

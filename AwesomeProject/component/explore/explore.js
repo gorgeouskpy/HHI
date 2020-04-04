@@ -14,7 +14,7 @@ export default class Explore extends Component {
     constructor(props){
         super(props);
         this.state = {
-            searchingWord:'xxx',
+            searchingWord:'请输入您想检索的单词',
             isLoading:false,
         };
         this.searchWord = this.searchWord.bind(this);
