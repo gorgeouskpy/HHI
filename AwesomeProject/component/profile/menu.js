@@ -17,21 +17,21 @@ function Menu({navigation}){
             <View style={styles.menuContainer}>
                 <Button
                     title="排行榜"
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('Ranking')}
                     color="#a52a2a"
                     ></Button>
             </View>
             <View style={styles.menuContainer}>
                 <Button
                     title="设定"
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('Setting')}
                     color="#a52a2a"
                     ></Button>
             </View>
             <View style={styles.menuContainer}>
                 <Button
                     title="开发者模式"
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('Developer')}
                     color="#a52a2a"
                     ></Button>
             </View>
@@ -52,7 +52,7 @@ function Menu({navigation}){
             <View style={styles.menuContainer}>
                 <Button
                     title="关于"
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('About')}
                     color="#a52a2a"
                     ></Button>
             </View>
