@@ -23,7 +23,7 @@ function Profile(){
 
 const user = {
     username:'Eli',
-    logintime: '2020-4-5',
+    logintime: '2020-4-7',
     highscore: '8001',
     rank: '1',
 }

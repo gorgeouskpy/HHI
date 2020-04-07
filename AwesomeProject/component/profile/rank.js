@@ -12,17 +12,17 @@ function Rank(){
             <FlatList
                 data={[
                     {ranking:1,username:'Eli',score:8001},
-                    {ranking:2,username:'Luisa',score:8001},
-                    {ranking:3,username:'Jans',score:8001},
-                    {ranking:4,username:'Mark',score:8001},
-                    {ranking:5,username:'Peter',score:8001},
-                    {ranking:6,username:'Sara',score:8001},
-                    {ranking:7,username:'Jack',score:8001},
-                    {ranking:8,username:'Dove',score:8001},
-                    {ranking:9,username:'Oriacal',score:8001},
-                    {ranking:10,username:'HealsCliff',score:8001},
-                    {ranking:11,username:'Catherine',score:8001},
-                    {ranking:12,username:'Share',score:8001},
+                    {ranking:2,username:'Luisa',score:7341},
+                    {ranking:3,username:'Jans',score:7221},
+                    {ranking:4,username:'Mark',score:6842},
+                    {ranking:5,username:'Peter',score:6700},
+                    {ranking:6,username:'Sara',score:5680},
+                    {ranking:7,username:'Jack',score:5664},
+                    {ranking:8,username:'Dove',score:4578},
+                    {ranking:9,username:'Oriacal',score:4432},
+                    {ranking:10,username:'HealsCliff',score:3321},
+                    {ranking:11,username:'Catherine',score:3321},
+                    {ranking:12,username:'Share',score:2020},
                 ]}
                 renderItem={({item}) => <RankListComponent item={item}></RankListComponent>}
                 ></FlatList>

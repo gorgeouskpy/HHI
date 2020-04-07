@@ -6,8 +6,10 @@ import {
 
 function About(){
     return(
-        <View>
-            <Text>About us</Text>
+        <View style={{backgroundColor:'#f0e0df', flex:1}}>
+            <Text>//created by kpy root@gorgeouskpy.cn</Text>
+            <Text>//last edited by kpy root@gorgeouskpy.cn on 2020-04-07</Text>
+            <Text>//HHI © all rights reserved</Text>
         </View>
     )
 }

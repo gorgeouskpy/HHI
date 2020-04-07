@@ -1,3 +1,8 @@
+
+//created by kpy root@gorgeouskpy.cn
+//last edited by kpy root@gorgeouskpy.cn on 2020-04-07
+//HHI © all rights reserved
+
 import * as React from 'react';
 import { Button, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,6 +17,9 @@ import MenuStackX from './component/profile/menuStack';
 import Explore from './component/explore/explore';
 
 import IconHome from './component/tabBar/homeIcon';
+import IconMenu from './component/tabBar/menuIcon';
+import IconExp from './component/tabBar/expIcon';
+
 
 export default App;
 
@@ -31,6 +39,9 @@ function App(){
                 <Tab.Screen
                     name='Explore'
                     component={Explore}
+                    options={{
+                        tabBarIcon:()=><IconExp></IconExp>
+                    }}
                     ></Tab.Screen>
                 <Tab.Screen
                     name='Home'
@@ -42,6 +53,9 @@ function App(){
                 <Tab.Screen
                     name='Menu'
                     component={MenuStackX}
+                    options={{
+                        tabBarIcon:()=>(<IconMenu></IconMenu>)
+                    }}
                     ></Tab.Screen>
             </Tab.Navigator>
         </NavigationContainer>

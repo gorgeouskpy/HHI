@@ -5,8 +5,8 @@ export default IconHome;
 
 function IconHome(){
     return(
-        <Image source={require('../../static/ss.png')}
-        style={{height: 30, width:30,}}
+        <Image source={require('../../static/home.png')}
+        style={{height: 20, width:20,}}
         ></Image>
     )
 }
