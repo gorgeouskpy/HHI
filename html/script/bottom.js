@@ -5,22 +5,30 @@ const bottomarea = {
         <div class="col-4">
           <h5 class="bottomlist-title">团队</h5>
           <ul class="bottomlist">
-            <li>Member 1</li>
-            <li>Member 2</li>
-            <li>Member 3</li>
-            <li>Member 4</li>
-            <li>Member 5</li>
-            <li>Member 6</li>
+            <li>冯岚涛</li>
+            <li>向标</li>
+            <li>余凯欣</li>
+            <li>寇沛仪</li>
+            <li>焦雨辰</li>
+            <li>王彦博</li>
           </ul>
         </div>
         <div class="col-4">
-          <h5 class="bottomlist-title">作品</h5>
+          <h5 class="bottomlist-title">联系我们</h5>
           <ul class="bottomlist">
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
+            <li>陕西省西安市长安区西沣路266号西安电子科技大学长安校区</li>
+		  </ul>
+		  <h5 class="bottomlist-title">邮编</h5>
+		  <ul class="bottomlist">
+		    <li>710126</li>
           </ul>
         </div>
+		<div class="col-4">
+		  <h5 class="bottomlist-title">电话</h5>
+		  <ul class="bottomlist">
+		    <li>19829246474</li>
+		  </ul>
+		</div>
       </div>
     </div>
     `,

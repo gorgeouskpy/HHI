@@ -7,9 +7,9 @@ import {
 function About(){
     return(
         <View style={{backgroundColor:'#f0e0df', flex:1}}>
-            <Text>//created by kpy root@gorgeouskpy.cn</Text>
-            <Text>//last edited by kpy root@gorgeouskpy.cn on 2020-04-07</Text>
-            <Text>//HHI © all rights reserved</Text>
+            <Text style={{color:'#a52a2a', fontSize:60,paddingBottom:21}}>greetings!</Text>
+            <Text style={{color:"#552a29",fontSize:20}}>这是由 头脑发热公司 的小组成员们制作的 智能英语学习机器人 的软件GUI演示</Text>
+            <Text style={{color:'#552a29',fontSize:20}}>HHI 头脑发热© all rights reserved</Text>
         </View>
     )
 }

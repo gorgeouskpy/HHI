@@ -12,7 +12,7 @@ body{
     transition: background-color .3s;
 }
 .topbar > span{
-    color: rgb(223, 192, 153);
+    color: #f0e0df;
     position: fixed;
     font-weight: 500;
     transition: all .3s;
@@ -50,11 +50,12 @@ img{
     position: absolute;
    left: 50px;
    top: 17px;
+
 }
 .logo >svg{
     height: 40px;
     width: 40px;
-    fill: rgb(223, 192, 153);
+    fill: #f0e0df;
     transition: all 1s;
 }
 .logo>svg:hover{

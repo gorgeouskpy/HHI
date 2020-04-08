@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HHI.inc</title>
+  <link rel="shortcut icon" href="./static/logo.png">
   <link rel="stylesheet" href="./dep/bootstrap-4.3.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dep/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/topbar.css">
@@ -24,7 +25,7 @@
     <div id="docs">
         <topbar></topbar>
         <div class="container-fluid">
-            <div class="row">
+           <!-- <div class="row">
                 <div class="col-3 sidebar">
                     <h5 @click="toggle1">Title1</h5>
                     <ul v-if="titletoggle1">
@@ -34,36 +35,38 @@
                         <li>Content</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-3 sidebar">
-                    <h5 @click="toggle1">Title1</h5>
+                    <h5 @click="toggle1">团队介绍</h5>
                     <transition name="ulme">
                     <ul v-show="titletoggle1" class="titlelist">
-                        <li>Content</li>
-                        <li>Content</li>
-                        <li>Content</li>
-                        <li>Content</li>
+                        <li>冯岚涛</li>
+                        <li>寇沛仪</li>
+                        <li>向标</li>
+                        <li>余凯欣</li>
+						<li>王彦博</li>
+						<li>焦雨辰</li>
                     </ul>
                     </transition>
-                    <h5 @click="toggle2">Title2</h5>
+                    <h5 @click="toggle2">项目介绍</h5>
                     <transition name="ulme">
-                    <ul v-show="titletoggle2" class="titlelist">
+                    <!-- <ul v-show="titletoggle2" class="titlelist">
                         <li>Content</li>
                         <li>Content</li>
                         <li>Content</li>
                         <li>Content</li>
-                    </ul>
+                    </ul> -->
                     </transition>
 
-                    <h5 @click="toggle3">Title3</h5>
+                    <!-- <h5 @click="toggle3">Title3</h5>
                     <transition name="ulme">
                     <ul v-show="titletoggle3" class="titlelist">
                         <li>Content</li>
                         <li>Content</li>
                         <li>Content</li>
                         <li>Content</li>
-                    </ul>
+                    </ul> -->
                     </transition>
                 </div>
             </div>

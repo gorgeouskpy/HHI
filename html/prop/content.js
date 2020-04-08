@@ -2,26 +2,21 @@ Vue.component("mydefault",{
     template:
     `
     <div class="col-8 contentarea">
-        <h3>Title</h3>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
-        <p>CSS 属性 text-decoration-style 用于设置由 text-decoration-line 设定的线的样式。线的样式会应用到所有被 text-decoration-line 设定的线，不能为其中的每条线设置不同的样式。当要设置多个线修饰属性时，用 text-decoration 简写属性会比分别写多个属性更方便。</p>
+        <h3>团队介绍</h3>
+		<h5>冯岚涛</h5>
+        <p>19岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任项目总经理，软件工程师以及首席机械设计师。热情开朗，乐于钻研，爱好是羽毛球和阅读。</p>
+		<h5>向标</h5>
+		<p>19岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任首席数字系统工程师，首席公关和组装工程师。学习能力强，喜欢钻研，挑战未知。爱好是篮球足球等体育运动以及阅读。</p>
+		<h5>王彦博</h5>
+		<p>20岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任数字系统工程师和电子布线工程师。动手能力强，喜欢游戏，热爱旅游和阅读。</p>
+		<h5>焦雨辰</h5>
+		<p>20岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任首席机械师和组装工程师。学习能力强，热爱篮球等体育运动，经常参与体育锻炼。</p>
+		<h5>寇沛仪</h5>
+		<p>19岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任软件工程师和网页设计师。喜欢探索未知的事物，对生活充满热情。</p>
+		<h5>余凯欣</h5>
+		<p>19岁，西安电子科技大学本科通信工程学院18级学生。在本次项目中担任秘书，电子和布线工程师以及首席数字系统工程师。开朗爱笑，喜欢说唱音乐，看韩剧和jk制服，也会参与球类运动。</p>
+		<h3>项目介绍</h3>
+		<p>本项目采用计算机、嵌入式软件及数字技术进行有机结合，提供基于传感器的学生辅助学习系统提供只能解决办法。该项目设计一台智能英语学习机器人（以下简称机器人），该机器人通过声音、LCD屏幕与用户交互。机器人具备单词查询以及词汇测试闯关等基本功能，系统会根据用户的学习情况给出评价或者其他的学习建议。该机器人的特色是物理交互性以及趣味性，适合小初中学生趣味学习英语使用。</p>
     </div>
     `,
 })

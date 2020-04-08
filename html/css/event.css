@@ -1,0 +1,71 @@
+a{
+    color: #f0e0df;
+}
+a:hover{
+    color: #f0e0df;
+}
+.topbar{
+    background-color: rgba(165, 42, 42, 1);
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    position: fixed;
+    z-index: 100;
+    transition: background-color .3s;
+}
+.arrow{
+}
+.arrow >svg{
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.popper{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.popper1{
+    width: 600px;
+    margin-left: 300px;
+    background-color: #a52a2a;
+    padding: 40px;
+    color: #f0e0df;
+    position: absolute;
+    top: -040px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.popper2{
+    width: 600px;
+    margin-left: 300px;
+    background-color: #a52a2a;
+    padding: 40px;
+    color: #f0e0df;
+    position: absolute;
+    top: 340px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.popper3{
+    width: 600px;
+    margin-left: 300px;
+    background-color: #a52a2a;
+    padding: 40px;
+    color: #f0e0df;
+    position: absolute;
+    top: 720px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.popper4{
+    width: 600px;
+    margin-left: 300px;
+    background-color: #a52a2a;
+    padding: 40px;
+    color: #f0e0df;
+    position: absolute;
+    top: 1100px;
+    font-size: 20px;
+    border-radius: 30px;
+}
