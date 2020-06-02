@@ -10,7 +10,7 @@ import Rank from './rank';
 import About from './about';
 import Dev from './dev';
 import Setting from './setting';
-import Devinfo from './devinfo'
+import Devinfo from './dev/devinfo'
 
 const ProfileStack = createStackNavigator();
 
