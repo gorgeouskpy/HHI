@@ -2,12 +2,15 @@ import * as React from 'react';
 import {
     View,
     Text,
+    Button,
 } from 'react-native';
 
-function Dev(){
+function Dev({navigation}){
     return(
         <View>
-            <Text>Dev</Text>
+            <Button title="Device Information" 
+            onPress={() => navigation.navigate('Devinfo')}
+            color="#a52a2a"></Button>
         </View>
     )
 }

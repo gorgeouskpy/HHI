@@ -10,6 +10,7 @@ import Rank from './rank';
 import About from './about';
 import Dev from './dev';
 import Setting from './setting';
+import Devinfo from './devinfo'
 
 const ProfileStack = createStackNavigator();
 
@@ -46,6 +47,10 @@ function MenuStackX(){
                 <ProfileStack.Screen
                     name = "About"
                     component = {About}
+                    ></ProfileStack.Screen>
+                <ProfileStack.Screen
+                    name = "Devinfo"
+                    component = {Devinfo}
                     ></ProfileStack.Screen>
             </ProfileStack.Navigator>
     )

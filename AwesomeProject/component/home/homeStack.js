@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, HeaderTitle } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Home from '../home/home'
-import HomeX from '../home/homemain'
+import Home from './home'
+import HomeX from './homemain'
 
 const HomeStack = createStackNavigator();
 

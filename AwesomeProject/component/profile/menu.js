@@ -1,8 +1,5 @@
 import * as React from 'react';
 import { Button, View, Text, StyleSheet,FlatList } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { color } from 'react-native-reanimated';
 
 function Menu({navigation}){
     return(
