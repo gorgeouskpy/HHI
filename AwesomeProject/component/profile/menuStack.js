@@ -11,6 +11,9 @@ import About from './about';
 import Dev from './dev';
 import Setting from './setting';
 import Devinfo from './dev/devinfo'
+import Cons from './dev/console'
+import Upload from './dev/uploadDic'
+import Test from './dev/test'
 
 const ProfileStack = createStackNavigator();
 
@@ -51,6 +54,18 @@ function MenuStackX(){
                 <ProfileStack.Screen
                     name = "Devinfo"
                     component = {Devinfo}
+                    ></ProfileStack.Screen>
+                <ProfileStack.Screen
+                    name = "Console"
+                    component = {Cons}
+                    ></ProfileStack.Screen>
+                <ProfileStack.Screen
+                    name = "Upload"
+                    component = {Upload}
+                    ></ProfileStack.Screen>
+                <ProfileStack.Screen
+                    name = "Test mode"
+                    component = {Test}
                     ></ProfileStack.Screen>
             </ProfileStack.Navigator>
     )

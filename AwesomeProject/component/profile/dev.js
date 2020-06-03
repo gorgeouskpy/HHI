@@ -16,17 +16,17 @@ function Dev({navigation}){
             </View>
             <View style={styles.buttonContainerx}>
                 <Button title="设备控制台" 
-                onPress={() => navigation.navigate('Devinfo')}
+                onPress={() => navigation.navigate('Console')}
                 color="#a52a2a"></Button>
             </View>
             <View style={styles.buttonContainerx}>
                 <Button title="上传本地词典" 
-                onPress={() => navigation.navigate('Devinfo')}
+                onPress={() => navigation.navigate('Upload')}
                 color="#a52a2a"></Button>
             </View>
             <View style={styles.buttonContainerx}>
                 <Button title="测试设备状态" 
-                onPress={() => navigation.navigate('Devinfo')}
+                onPress={() => navigation.navigate('Test mode')}
                 color="#a52a2a"></Button>
             </View>
         </View>
