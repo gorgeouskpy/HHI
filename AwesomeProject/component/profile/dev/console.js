@@ -83,7 +83,7 @@ class StateConsole extends React.Component{
     
     render(){
         return(
-        <View>
+        <View style={styles.basicView}>
             <SingleState showing={this.state.isLine1Showing} content={this.state.check}></SingleState>
             <SingleState showing={this.state.isLine2Showing} content={this.state.check}></SingleState>
             <SingleState showing={this.state.isLine3Showing} content={this.state.check}></SingleState>
