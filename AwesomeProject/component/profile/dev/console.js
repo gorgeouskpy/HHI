@@ -74,11 +74,11 @@ class StateConsole extends React.Component{
                             this.setState({
                                 isLine5Showing:false,
                             })
-                        },1000)
-                    },1000)
-                },1000)
-            },1000)
-        },1000)
+                        },450)
+                    },124)
+                },542)
+            },236)
+        },256)
     }
     
     render(){
